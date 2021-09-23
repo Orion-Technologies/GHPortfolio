@@ -11,6 +11,12 @@ function typing_animation(){
 
 }
 
+let cursor_timings = {
+    duration: 700,
+    iterations: Infinity,
+    easing: 'cubic-bezier(0, .26, .44, .93)'
+}
+
 let animation = document.querySelector(".text_cursor").animate([
     {
         opacity: 0
@@ -23,12 +29,6 @@ let animation = document.querySelector(".text_cursor").animate([
     }
 
 ], cursor_timings);
-
-let cursor_timings = {
-    duration: 700,
-    iterations: Infinity,
-    easing: 'cubic-bezier(0, .26, .44, .93)'
-}
 
 typing_animation();
 
