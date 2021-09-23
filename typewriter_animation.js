@@ -1,16 +1,17 @@
 
-function typing_animation() {
+function typing_animation(){
     let text_element = document.querySelector(".text");
     let text_array = text_element.innerHTML.split("");
     let all_words = text_element.innerHTML.split(" ");
     let text_len = text_array.length;
+
     const word_len = all_words.map((word) => {
         return word.length;
     });
-}
-typing_animation();
 
-document.querySelector(".text_cursor").animate([
+}
+
+let animation = document.querySelector(".text_cursor").animate([
     {
         opacity: 0
     },
@@ -26,7 +27,8 @@ document.querySelector(".text_cursor").animate([
 let cursor_timings = {
     duration: 700,
     iterations: Infinity,
-    easing: 'cubic-bezier(0, .26,.44,.93)'
+    easing: 'cubic-bezier(0, .26, .44, .93)'
 }
 
-let animation = document.querySelector(".text_cursor").animate([]);
+typing_animation();
+
