@@ -7,9 +7,29 @@
 
       <!-- Bootstrap CSS -->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<style>
 
+.typewriter h1 {
+      overflow: hidden;
+      border-right: .15em solid orange;
+      margin: 0 auto;
+      letter-spacing: .15em;
+      animation:
+        typin 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+    }
       
+    @keyframes {
+      from { width: 0
+      }
 
+      to {
+        width: 100%
+      }
+    }
+
+</style>
+      
       <title>Portfolio</title>
 
   </head>
@@ -101,7 +121,9 @@ I know Data Bases too, I have worked with MySQL, SQL, and SQLite.
 </div>
 
 <!-- Social Media cards -->
-
+<div class="typewriter">
+  <h1>Contacts</h1>
+</div>
 <div class="card-group gap-3">
   <div class="card">
     <img src="images/GitHub.png" class="card-img-top img-thumbnail" alt="Github" title="GitHub">
