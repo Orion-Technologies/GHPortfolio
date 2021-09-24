@@ -38,12 +38,12 @@ let timings = {
 
 let reveal_animation_1 = document.querySelector(".text_hide").animate([
     { left: '0%'},
-    { left: `${(24 / text_len) * (word_len[0])}%` }
+    { left: `${(100 / text_len) * (word_len[0])}%` }
 ], timings);
 
 document.querySelector(".text_cursor").animate([
     { left: '0%' },
-    { left: `${(24 / text_len) * (word_len[0])}%` }
+    { left: `${(100 / text_len) * (word_len[0])}%` }
 ], timings);
 
 }
