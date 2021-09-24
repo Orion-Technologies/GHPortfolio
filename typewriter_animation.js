@@ -9,7 +9,6 @@ function typing_animation(){
         return word.length;
     });
 
-}
 
 let cursor_timings = {
     duration: 700,
@@ -30,5 +29,23 @@ let animation = document.querySelector(".text_cursor").animate([
 
 ], cursor_timings);
 
-typing_animation();
+let timings = {
+    easing: `steps(${Number(word_len[0] + 1)}, end)`,
+    delay: 2000,
+    duration: 2000,
+    fill: 'forwards'
+}
 
+let reveal_animation_1 = document.querySelector(".text_hide").animate([
+    { left: '0%'},
+    { left: `${(24 / text_len) * (word_len[0])}%` }
+], timings);
+
+document.querySelector(".text_cursor").animate([
+    { left: '0%' },
+    { left: `${(24 / text_len) * (word_len[0])}%` }
+], timings);
+
+}
+
+typing_animation();
