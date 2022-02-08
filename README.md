@@ -18,7 +18,7 @@ web page: **[Orion Technologies](http://oriontechnologiesgt.com)**
 (To open in new tab CTRL+Click on Windows and Linux or CMD+Click on Mac)
 
 ## Roadmap
-I'm planning every pacman changes the color every time them hit the screen.
+Updating every week.
 
 ## License Information
 **[MIT Lincense](https://opensource.org/licenses/MIT)**
